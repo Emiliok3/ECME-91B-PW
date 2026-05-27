@@ -1,0 +1,166 @@
+
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>¿Qué te gusta del ETE? - Proyecto</title>
+    <link rel="stylesheet" type="text/css" href="../Estilos/Estilo2-ECME.css">
+    <style>
+        /* Estilos específicos para esta página para lograr el cambio de organización */
+        .contenedor-dinamico {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px;
+            background-color: white;
+        }
+
+		.footer{
+		    background-color: white
+			}
+        .tarjeta-gusto {
+            background: #f2f6fb;
+            border-radius: 30px;
+            padding: 25px;
+            transition: all 0.4s ease;
+            box-shadow: 10px 10px 0px #5CA0ED; /* Sombra sólida estilo retro */
+            border: 2px solid #5CA0ED;
+            color: black;
+            text-align: left;
+        }
+
+        .tarjeta-gusto:hover {
+            transform: translateY(-10px) rotate(2deg);
+            box-shadow: 15px 15px 0px #F7CE39;
+            border-color: #F7CE39;
+        }
+
+        .tarjeta-gusto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta-gusto h3 {
+            font-family: 'Didot', serif;
+            color: #5CA0ED;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        .destaque-amarillo {
+            background-color: #F7CE39;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<audio id="audioInicio">
+    <source src="../Audios/Gusto.mp3" type="audio/mpeg">
+</audio>
+
+<div class="supermarqueee">
+    <marquee direction="left" scrollamount="12">
+        <img src="../Imagenes/Ballena1.GIF" class="gif-animado">
+        <span style="font-size: 30px; font-weight: bold; color: white;">
+             ¡Descubre lo más emocionante de ser parte de esta comunidad técnica! 
+        </span>
+        <img src="../Imagenes/Ballena1.GIF" class="gif-animado">
+    </marquee>
+</div>
+
+
+<div class="menu-lateral">
+    <div class="zona-hover"></div>
+    <nav class="menu-contenido">
+           <a href="../INDEX.html"><H3>ÍNDICE PRINCIPAL <H3></a>
+        <a href="./Proyecto.html">Invitación</a>
+       <a href="./Proyecto1.2.html">¿Por qué te invito?</a>
+        <a href="./Proyecto1.3.html">¿Qué puedes aprender?</a>
+        <a href="./Proyecto1.4.html">¿Qué me gusta del ETE?</a>
+        <a href="./Proyecto1.5.html">Retos y Superación</a>
+        <a href="./Proyecto1.6.html">Estrategias de Inscripción</a>
+        <a href="./Proyecto1.7.html">Evitar Deserción</a>
+    </nav>
+</div>
+
+ <div class="mensaje-indice">
+Arrastrar el mouse para abrir el índice →
+</div>
+
+<section class="hero-et" style="justify-content: center; text-align: center; flex-direction: column; min-height: 40vh;">
+    <h1 style="margin: 0;">¿Qué me gusta del ETE?</h1>
+    <h2 style="color: black; opacity: 1.3;">No es solo una clase, es una experiencia</h2>
+</section>
+
+<section class="contenido">
+    <div class="contenedor-dinamico">
+        
+        <div class="tarjeta-gusto">
+            <h3>El Ambiente</h3>
+            <p>Lo mejor de estar aquí es la gente. Te rodeas de compañeros súper habilidosos 
+			que tienen tus <span class="destaque-amarillo"> mismas metas y gustos </span> 
+			. No estás solo frente 
+			a la pantalla; aquí encuentras amigos que te ayudan a pensar 
+			y a resolver esos problemas complejos de clase. Es una comunidad 
+			donde el conocimiento se comparte y los retos se superan en equipo.</p><br><br>
+			<img src="../Imagenes/Convivencia.JPG" alt="Compañerismo">
+        </div>
+
+        <div class="tarjeta-gusto">
+            <h3>Tips y Nuevos Conocimientos</h3>
+            <p>Aprendes cosas que la mayoría de los alumnos ni se imagina. Vas mucho 
+			más allá de "picarle a los botones": entiendes la lógica de las bases de 
+			datos, aprendes a sacarle el jugo real a la ofimática y, lo mejor de todo, 
+			<span class="destaque-amarillo">descubres cómo 
+			crear y personalizar tu propia página web. </span>Pasas de ser un 
+			espectador a ser un creador digital.</p><br> 
+			<img src="../Imagenes/Jim1.GIF" alt="Práctica">
+        </div>
+
+        <div class="tarjeta-gusto">
+            
+            <h3>La realidad de la Computadora</h3>
+            <p>Aquí aprendes una gran verdad: las computadoras no son inteligentes. Son solo cajas rápidas.
+			 <span class="destaque-amarillo">Los verdaderos inteligentes 
+			son los usuarios que las programan</span> 
+			y les dan órdenes. Al entender
+			cómo funcionan por dentro, dejas de verlas como cajas misteriosas y empiezas a verlas como
+			herramientas que tú controlas totalmente. </p> <br><br>
+			<img src="../Imagenes/Globo.JPG" alt="Sentirse Hacker">
+		</div>
+
+        <div class="tarjeta-gusto">
+            
+            <h3>El Plus Profesional</h3>
+            <p>Si te lo propones, puedes ganar una Cédula Profesional como Técnico en Computación.
+			Pero no es solo el papel: son los contactos que haces para tu futura carrera y las prácticas
+			profesionales que te dan experiencia real. Es la <span class="destaque-amarillo">oportunidad perfecta</span>
+			 para empezar tu vida 
+			laboral con ventaja y una red de contactos que te servirá por años.</p> <br><br><br>
+			<img src="../Imagenes/Chamba.JPG" alt="Futuro">
+		</div>
+
+    </div>
+</section>
+
+<footer>
+       Prepa ENP • Estudio Técnico Especializado de Computación • 2026<b> Página Creada por Escobar Cancino Mariano Emilio ETE-CM 91-B</b>
+</footer>
+
+<script>
+    window.addEventListener("click", function () {
+        const audio = document.getElementById("audioInicio");
+        audio.play();
+    }, { once: true });
+</script>
+
+</body>
+</html>

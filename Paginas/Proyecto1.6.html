@@ -1,0 +1,200 @@
+
+<html lang="es">
+<head >
+    <meta charset="utf-8" />
+    <title>Estrategia de Inscripción - ETE</title>
+    <link rel="stylesheet" type="text/css" href="../Estilos/Estilo2-ECME.css">
+    <style>
+ 
+        .Color3 {
+            background-image: url("../Imagenes/Tech.gif"); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        /* Contenedor Principal */
+        .contenedor-estrategia {
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+
+			footer {
+			margin-top: 10px;
+			padding: 35px;
+			background-color: rgba(0,0,0,0.8);
+			font-size: 20px;
+			color: white;
+			}
+
+        /* Estilo de los pasos (Cards de Estrategia) */
+        .paso-estrategia {
+            background: #f9f9f9;
+            width: 85%;
+            max-width: 900px;
+            margin: 15px 0;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 10px solid #5CA0ED;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            transition: all 0.3s ease;
+            animation: deslizar 0.8s ease-out;
+        }
+
+        .paso-estrategia:hover {
+            transform: scale(1.01);
+            border-left-color: #F7CE39;
+            background-color: white;
+        }
+
+        .numero-paso {
+            background: #5CA0ED;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            min-width: 55px;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        .texto-paso h3 {
+            margin: 0 0 5px 0;
+            color: #5CA0ED;
+            font-size: 22px;
+        }
+
+        .texto-paso p {
+            margin: 0;
+            color: #333;
+            font-size: 22px;
+            line-height: 1.5;
+        }
+
+        @keyframes deslizar {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .conclusion-final {
+            background: #F7CE39;
+            color: black;
+            padding: 25px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            max-width: 800px;
+            margin: 40px auto;
+            border: 3px dashed #5CA0ED;
+            text-align: center;
+        }
+		.supermarqueer {
+		position: absolute;
+		top: 0px;          /* más abajo */
+		left: 0;
+		width: 100%;
+		z-index: 1;
+		background-color: rgba(0,0,0,0.4);
+		}
+		
+    </style>
+</head>
+
+<body class="Color3">
+
+<audio id="audioInicio">
+    <source src="../Audios/Gusto.mp3" type="audio/mpeg">
+</audio>
+
+<div class="supermarqueer">
+    <marquee direction="left" scrollamount="12">
+        <span style="font-size: 28px; font-weight: bold; color: white;"> 
+            Estrategia Para Convencer a tus Amigos
+        </span>
+    </marquee>
+</div>
+
+
+
+<div class="menu-lateral">
+    <div class="zona-hover"></div>
+   <nav class="menu-contenido">
+          <a href="../INDEX.html"><H3>ÍNDICE PRINCIPAL <H3></a>
+        <a href="./Proyecto.html">Invitación</a>
+        <a href="./Proyecto1.2.html">¿Por qué te invito?</a>
+        <a href="./Proyecto1.3.html">¿Qué puedes aprender?</a>
+        <a href="./Proyecto1.4.html">¿Qué me gusta del ETE?</a>
+        <a href="./Proyecto1.5.html">Retos y Superación</a>
+        <a href="./Proyecto1.6.html">Estrategias de Inscripción</a>
+        <a href="./Proyecto1.7.html">Evitar Deserción</a>
+    </nav>
+</div>
+ <div class="mensaje-indice">
+Arrastrar el mouse para abrir el índice →
+</div>
+ 
+<section class="hero-et" style="justify-content: center; text-align: center; flex-direction: column; min-height: 35vh;">
+    <h1>Estrategia de Inscripción</h1>
+    <h2 style="color: black;">Cómo inspirar a otros a unirse</h2>
+</section>
+
+<section class="contenedor-estrategia">
+    <div class="paso-estrategia" style="animation-delay: 0.1s;">
+        <div class="numero-paso">1</div>
+        <div class="texto-paso">
+            <h3>Enfoque Profesional</h3>
+            <p>Resalta la <b>Cédula Profesional</b>. Es el argumento más fuerte: obtener un título técnico mientras terminas la prepa.</p>
+        </div>
+    </div>
+
+    <div class="paso-estrategia" style="animation-delay: 0.2s;">
+        <div class="numero-paso">2</div>
+        <div class="texto-paso">
+            <h3>Gestión del Tiempo</h3>
+            <p>Cambia la perspectiva del horario. No son "dos horas más", es tiempo de calidad invertido en habilidades que el mercado laboral exige.</p>
+        </div>
+    </div>
+
+    <div class="paso-estrategia" style="animation-delay: 0.3s;">
+        <div class="numero-paso">3</div>
+        <div class="texto-paso">
+            <h3>Del Consumo a la Creación</h3>
+            <p>Motívalos explicándoles que dejarán de ser simples usuarios de apps para entender la lógica detrás de ellas.</p>
+        </div>
+    </div>
+
+    <div class="paso-estrategia" style="animation-delay: 0.4s;">
+        <div class="numero-paso">4</div>
+        <div class="texto-paso">
+            <h3>Comunidad Selecta</h3>
+            <p>Menciona el ambiente de apoyo. Estar con personas que comparten tus intereses tecnológicos facilita el aprendizaje de todo el año escolar.</p>
+        </div>
+    </div>
+
+    <div class="conclusion-final">
+        "La mejor estrategia es mostrar resultados. ¡Enséñales tus proyectos y deja que vean lo que son capaces de lograr!"
+    </div>
+</section>
+
+<footer>
+       Prepa ENP • Estudio Técnico Especializado de Computación • 2026 <b>Página Creada por Escobar Cancino Mariano Emilio ETE-CM 91-B</b>
+</footer>
+
+<script>
+    window.addEventListener("click", function () {
+        const audio = document.getElementById("audioInicio");
+        audio.play();
+    }, { once: true });
+</script>
+
+</body>
+</html>

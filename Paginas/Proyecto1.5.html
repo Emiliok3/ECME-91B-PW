@@ -1,0 +1,411 @@
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Retos y Superación - ETE</title>
+    <link rel="stylesheet" type="text/css" href="../Estilos/Estilo2-ECME.css">
+   <style>
+       
+	  
+</head>
+
+        body.ImgFondo2 {
+            background-image: url: ("../Videos/Minecraft.mp4")/* Revisa que la A sea mayúscula */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        /* 2. HACEMOS LAS SECCIONES TRANSPARENTES PARA VER EL FONDO */
+        .seccion-tabla {
+            padding: 50px 20px;
+            background-color: rgba(255, 255, 255, -0.1); /* Blanco muy transparente */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* 3. ESTILOS DE LA TABLA */
+        .tabla-retos {
+            width: 90%;
+            max-width: 1000px;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 3px solid #5CA0ED;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+            margin-bottom: 40px;
+            background-color: white; /* La tabla sí debe ser blanca para que se lea */
+        }
+
+        .tabla-retos thead {
+            background-color: #5CA0ED;
+            color: white;
+            font-family: Times;
+			font-weight:bold ;
+            font-size: 27px;
+			
+			
+        }
+
+			footer {
+			margin-top: 10px;
+			padding: 35px;
+			background-color: rgba(0,0,0,0.8);
+			font-size: 20px;
+			color: white;
+			}
+}
+
+        .tabla-retos th {
+            padding: 25px;
+            font-family: Times;
+			font-weight:bold ;
+			font-size: 4pxs;
+			text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+		
+		.tabla-retos td {
+		 padding: 25px;
+			text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+			
+		}
+        .col-reto {
+            background-color: #f2f6fb;
+            width: 40%;
+            color: #000;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .col-solucion {
+            background-color: white;
+            width: 60%;
+            color: #444;
+            font-size: 22px;
+            line-height: 1.6;
+			font-family:Calibri;
+			color: #000;
+			font-weight: bold;
+        }
+
+        .icono-check { color: #5CA0ED; font-weight: bold; margin-right: 8px; }
+
+        .conclusion-final {
+            background: #F7CE39;
+            color: black;
+            padding: 30px;
+            border-radius: 50px;
+            font-size: 22px;
+            font-weight: bold;
+            max-width: 800px;
+            margin: 20px auto;
+            border: 3px dashed #5CA0ED;
+            text-align: center;
+        }
+
+        .cat-gif {
+            width: 150px;
+            border-radius: 15px;
+            border: 3px solid #F7CE39;
+        }
+		
+		.supermarqueer {
+		position: absolute;
+		top: 0px;          /* más abajo */
+		left: 0;
+		width: 100%;
+		z-index: 1;
+		background-color: rgba(0,0,0,0.4);
+		
+    </style>
+</head>
+
+<body>
+ <div class="video-container">
+    <video autoplay muted loop>
+      <source src="../videos/Minecraft.mp4" type="video/mp4">
+    </video>
+  </div>
+<audio id="audioInicio">
+    <source src="../Audios/Gusto.mp3" type="audio/mpeg">
+</audio>
+
+<div class="supermarqueer">
+    <marquee direction="right" scrollamount="12">
+        <span style="font-size: 28px; font-weight: bold; color: white;"> 
+		<img src="../Imagenes/Raton.GIF" class="gif-animadoo">
+		<img src="../Imagenes/Raton.GIF" class="gif-animadoo">
+            ¡No es imposible, es cuestión de estrategia! Supera tus retos en el ETE 
+        </span>
+		<img src="../Imagenes/Raton.GIF" class="gif-animadoo">
+		<img src="../Imagenes/Raton.GIF" class="gif-animadoo">
+    </marquee>
+</div>
+
+
+
+<div class="menu-lateral">
+    <div class="zona-hover"></div>
+    <nav class="menu-contenido">
+            <a href="../INDEX.html"><H3>ÍNDICE PRINCIPAL <H3></a>
+        <a href="./Proyecto.html">Invitación</a>
+        <a href="./Proyecto1.2.html">¿Por qué te invito?</a>
+        <a href="./Proyecto1.3.html">¿Qué puedes aprender?</a>
+        <a href="./Proyecto1.4.html">¿Qué me gusta del ETE?</a>
+        <a href="./Proyecto1.5.html">Retos y Superación</a>
+        <a href="./Proyecto1.6.html">Estrategias de Inscripción</a>
+        <a href="./Proyecto1.7.html">Evitar Deserción</a>
+    </nav>
+</div>
+
+ <div class="mensaje-indice">
+Arrastrar el mouse para abrir el índice →
+</div>
+
+<section class="hero-et" style="justify-content: center; text-align: center; flex-direction: column; min-height: 35vh;">
+    <h1>Retos y cómo superarlos</h1>
+    <h2 style="color: black;">Invertir en tu futuro requiere compromiso</h2>
+</section>
+
+<section class="seccion-tabla">
+    <table class="tabla-retos">
+        <thead>
+            <tr> 
+                <th>EL RETO</th>
+                <th>COMO LO ESTOY SUPERANDO </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="col-reto">Horarios más largos <br><small>(Entrar antes o salir tarde)</small></td>
+                <td class="col-solucion">
+                    <span class="icono-check">★</span> Organiza tus tiempos desde el inicio.<br>
+                    <span class="icono-check">★</span> Aprovecha huecos libres para adelantar tareas.<br>
+                    <span class="icono-check">★</span> Habla con tu profesora; a veces hay flexibilidad si explicas tu situación.
+                </td>
+            </tr>
+            <tr>
+                <td class="col-reto">Menos tiempo con amigos y planes sociales</td>
+                <td class="col-solucion">
+                    <span class="icono-check">★</span> No todo se pierde, solo se reorganiza.<br>
+                    <span class="icono-check">★</span> Planea tus salidas para los fines de semana o días sin ETE.<br>
+                    <span class="icono-check">★</span> Prioriza: estás invirtiendo en una habilidad que te servirá de por vida.
+                </td>
+            </tr>
+            <tr>
+                <td class="col-reto">Carga académica de 5to año <br><small>(El año más pesado)</small></td>
+                <td class="col-solucion">
+                    <span class="icono-check">★</span> Elige un grupo con carga equilibrada.<br>
+                    <span class="icono-check">★</span> Usa una agenda para no dejar todo al final.<br>
+                    <span class="icono-check">★</span> No satures tus optativas si sientes que el tiempo es corto.
+                </td>
+            </tr>
+            <tr>
+                <td class="col-reto">Asistencias obligatorias (85%)</td>
+                <td class="col-solucion">
+                    <span class="icono-check">★</span> Tienes permiso de faltar aproximadamente una vez cada dos semanas.<br>
+                    <span class="icono-check">★</span> Usa tus faltas solo para emergencias o proyectos pesados.<br>
+                    <span class="icono-check">★</span> Mantén comunicación constante con tus compañeros.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="conclusion-final">
+        "No es sencillo, pero sí posible. Al final, el esfuerzo rinde frutos y la satisfacción del reconocimieno por la finalizacion de tus estudios técnicos vale mucho."
+    </div>
+
+   
+</section>
+
+<footer>
+        Prepa ENP • Estudio Técnico Especializado de Computación • 2026 <b>Página Creada por Escobar Cancino Mariano Emilio ETE-CM 91-B</b>
+</footer>
+
+<script>
+    window.addEventListener("click", function () {
+        const audio = document.getElementById("audioInicio");
+        audio.play();
+    }, { once: true });
+</script>
+
+</body>
+</html> 
+
+<!--<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Retos y Superación - ETE</title>
+    <link rel="stylesheet" type="text/css" href="../Estilos/Estilo2-ECME.css">
+    <style>
+        /* 1. DEFINIMOS EL FONDO AQUÍ PARA QUE NO HAYA FALLA */
+        body.ImgFondo2 {
+            background-image: url("../Imagenes/Ajustar.jpg"); /* Revisa que la A sea mayúscula */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        /* 2. HACEMOS LAS SECCIONES TRANSPARENTES PARA VER EL FONDO */
+        .seccion-tabla {
+            padding: 50px 20px;
+            background-color: rgba(255, 255, 255, 0.4); /* Blanco muy transparente */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* 3. ESTILOS DE LA TABLA */
+        .tabla-retos {
+            width: 90%;
+            max-width: 1000px;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 3px solid #5CA0ED;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+            margin-bottom: 40px;
+            background-color: white; /* La tabla sí debe ser blanca para que se lea */
+        }
+
+        .tabla-retos thead {
+            background-color: #5CA0ED;
+            color: white;
+            font-family: 'PlayfairDisplay', serif;
+            font-size: 24px;
+        }
+
+        .tabla-retos th, .tabla-retos td {
+            padding: 25px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .col-reto {
+            background-color: #f2f6fb;
+            width: 40%;
+            color: #333;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .col-solucion {
+            background-color: white;
+            width: 60%;
+            color: #444;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .icono-check { color: #5CA0ED; font-weight: bold; margin-right: 8px; }
+
+        .conclusion-final {
+            background: #F7CE39;
+            color: black;
+            padding: 30px;
+            border-radius: 50px;
+            font-size: 22px;
+            font-weight: bold;
+            max-width: 800px;
+            margin: 20px auto;
+            border: 3px dashed #5CA0ED;
+            text-align: center;
+        }
+
+        .cat-gif {
+            width: 150px;
+            border-radius: 15px;
+            border: 3px solid #F7CE39;
+        }
+    </style>
+</head>
+
+<body class="ImgFondo2">
+
+<audio id="audioInicio">
+    <source src="../Audios/Gusto.mp3" type="audio/mpeg">
+</audio>
+
+<div class="Supermarquee"> <marquee direction="left" scrollamount="12">
+        <img src="../Imagenes/Gato1.GIF" style="height: 50px; vertical-align: middle;">
+        <span style="font-size: 28px; font-weight: bold; color: white;"> 
+            ¡No es imposible, es cuestión de estrategia! Supera tus retos en el ETE 
+        </span>
+        <img src="../Imagenes/Gato2.GIF" style="height: 50px; vertical-align: middle;">
+    </marquee>
+</div>
+
+<div class="menu-lateral">
+    <div class="zona-hover"></div>
+    <nav class="menu-contenido">
+        <h3>Índice</h3>
+        <a href="./Proyecto.html">Invitación</a>
+        <a href="./Proyecto1.2.html">¿Por qué me invitas?</a>
+        <a href="./Proyecto1.3.html">Qué puedes aprender</a>
+        <a href="./Proyecto1.4.html">Qué te gusta del ETE</a>
+        <a href="./Proyecto1.5.html">Retos y Superación</a>
+        <a href="./Proyecto1.6.html">Estrategia Inscripción</a>
+        <a href="./Proyecto1.7.html">Evitar Deserción</a>
+    </nav>
+</div>
+
+<section class="hero-et" style="background: transparent; justify-content: center; text-align: center; flex-direction: column; min-height: 35vh;">
+    <h1 style="color: white; text-shadow: 2px 2px 4px black;">Retos y cómo superarlos</h1>
+    <h2 style="color: #F7CE39; text-shadow: 1px 1px 2px black;">Invertir en tu futuro requiere compromiso</h2>
+</section>
+
+<section class="seccion-tabla">
+    <table class="tabla-retos">
+        <thead>
+            <tr>
+                <th>EL RETO</th>
+                <th>CÓMO LO ESTOY SUPERANDO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="col-reto">Horarios más largos <br><small>(Entrar antes o salir tarde)</small></td>
+                <td class="col-solucion">
+                    <span class="icono-check">✔</span> Organiza tus tiempos desde el inicio.<br>
+                    <span class="icono-check">✔</span> Aprovecha huecos libres para adelantar tareas.<br>
+                    <span class="icono-check">✔</span> Habla con tu profesora; a veces hay flexibilidad.
+                </td>
+            </tr>
+            <tr>
+                <td class="col-reto">Carga académica de 5to año</td>
+                <td class="col-solucion">
+                    <span class="icono-check">✔</span> Elige un grupo con carga equilibrada.<br>
+                    <span class="icono-check">✔</span> Usa una agenda para no dejar todo al final.<br>
+                    <span class="icono-check">✔</span> Avanza proyectos con tiempo.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="conclusion-final">
+        "No es sencillo, pero sí posible. Al final, el esfuerzo rinde frutos."
+    </div>
+
+    <div style="display: flex; gap: 20px;">
+        <img src="../Imagenes/Gato1.GIF" class="cat-gif">
+        <img src="../Imagenes/Gato2.GIF" class="cat-gif">
+    </div>
+</section>
+
+<footer>
+    Prepa ENP • Estudio Técnico Especializado de Computación • 2026
+</footer>
+
+</body>
+</html>-->
+

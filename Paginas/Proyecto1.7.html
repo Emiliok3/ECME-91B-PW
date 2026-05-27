@@ -1,0 +1,329 @@
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Permanencia y Éxito - ETE</title>
+    <link rel="stylesheet" type="text/css" href="../Estilos/Estilo2-ECME.css">
+    <style>
+        /* --- ESTILOS GENERALES Y FONDO --- */
+        body {
+            /* Fondo oscuro con el GIF Tech mezclado para que se lea el texto */
+            background: linear-gradient(rgba(10, 25, 47, 0.55), rgba(10, 25, 47, 0.4)), url("../Imagenes/Paisaje.gif");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* --- HERO SIMÉTRICO --- */
+        .hero-final {
+           width: 180px
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 3px solid #5CA0ED;
+            background: #5CA0ED;
+            backdrop-filter: blur(5px);
+            padding: 20px;
+        }
+
+        .hero-titulo {
+            font-size: 3.5rem;
+            margin: 0;
+            text-shadow: 0 0 10px #5CA0ED;
+            animation: entradaSuave 1s ease-out;
+        }
+
+        .hero-subtitulo {
+            color: #F7CE39;
+            font-size: 1.5rem;
+            margin-top: 10px;
+            text-shadow: 0 0 5px #F7CE39;
+        }
+
+        /* --- GRID SIMÉTRICO (TARJETAS) --- */
+        .contenedor-central {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .grid-simetrico {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Dos columnas iguales para simetría */
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+			footer {
+			margin-top: 10px;
+			padding: 35px;
+			background-color: rgba(0,0,0,0.8);
+			font-size: 20px;
+			color: white;
+			}
+
+        .tarjeta-cristal {
+            background: rgba(255, 255, 255, 0.3); /* Efecto cristal muy sutil */
+            border: 1px solid rgba(92, 160, 237, 0.3);
+            border-radius: 20px;
+            padding: 35px;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Efecto Hover: Se ilumina */
+        .tarjeta-cristal:hover{
+            transform: translateY(-10px);
+            border-color: #F7CE39;
+            background: rgba(180, 150, 90, 100);
+            box-shadow: 0 0 30px rgba(92, 160, 237, 0.2);
+			
+
+        }
+
+        .icono-tarjeta {
+            font-size: 50px;
+            margin-bottom: 20px;
+            display: block;
+            filter: drop-shadow(0 0 5px #5CA0ED);
+        }
+
+        .titulo-card {
+            color: #5CA0ED;
+            font-size: 24px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+		
+		.tarjeta-cristal:hover .titulo-card {
+			color: #ffffff;
+			}
+	
+        /* --- MENSAJE CONFORTANTE (Highlight) --- */
+        .mensaje-confort {
+            background:rgba(92, 160, 237, .9); 
+            border-left: 5px solid #F7CE39;
+            border-right: 5px solid #F7CE39;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 60px auto;
+            max-width: 900px;
+            position: relative;
+        }
+
+        .mensaje-confort h2 {
+            color: white;
+            font-size: 37px;
+            margin-bottom: 20px;
+			font-weight:p
+        }
+
+        .mensaje-confort p {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #fff;
+        }
+
+        .firma {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #F7CE39;
+            font-style: italic;
+        }
+
+        /* --- ANIMACIONES --- */
+        @keyframes entradaSuave {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Ajuste para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .grid-simetrico { grid-template-columns: 1fr; }
+        }
+
+        /* Estilo del GIF flotante */
+        .cat-float {
+            width: 100px;
+            animation: flotar 3s infinite ease-in-out;
+        }
+        @keyframes flotar {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+		.supermarqueer {
+		position: absolute;
+		top: 0px;          /* más abajo */
+		left: 0;
+		width: 100%;
+		z-index: 1;
+		background-color: rgba(0,0,0,0);
+		}
+		 .creditos-container {
+        position: relative;
+        height: 35vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+		}
+
+		.creditos {
+        font-family: 'Playfair Display', serif;
+        color: white;
+        text-align: center;
+        font-size: 28px;
+        animation: scrollUp 20s linear infinite;
+		}
+
+		@keyframes scrollUp {
+			0% {
+				transform: translateY(100%);
+			}
+			100% {
+				transform: translateY(-100%);
+			}
+		}
+    </style>
+</head>
+
+<body>
+
+<audio id="audioInicio">
+    <source src="../Audios/Gusto.mp3" type="audio/mpeg">
+</audio>
+
+<div class="supermarqueer">
+    <marquee direction="left" scrollamount="12">
+        <span style="font-size: 28px; font-weight: bold; color: white; vertical-align: middle;"> 
+            <img src="../Imagenes/Beso.GIF" style="width: 50px; vertical-align: middle; margin-left:10px;">
+			<img src="../Imagenes/Beso.GIF" style="width: 50px; vertical-align: middle; margin-left:10px;">
+			<img src="../Imagenes/Beso.GIF" style="width: 50px; vertical-align: middle; margin-right:10px;">
+           Cursar el ETE puede ser complicado, pero recuerda por qué lo haces
+            <img src="../Imagenes/Beso.GIF" style="width: 50px; vertical-align: middle; margin-left:10px;">
+			<img src="../Imagenes/Beso.GIF" style="width: 50px; vertical-align: middle; margin-left:10px;">
+			<img src="../Imagenes/Beso.GIF" style="width: 50px; vertical-align: middle; margin-left:10px;">
+		</span><br> <br>
+    </marquee>
+</div>
+
+<div class="menu-lateral">
+    <div class="zona-hover"></div>
+    <nav class="menu-contenido">
+       <a href="../INDEX.html"><H3>ÍNDICE PRINCIPAL <H3></a>
+        <a href="./Proyecto.html">Invitación</a>
+        <a href="./Proyecto1.2.html">¿Por qué te invito?</a>
+
+        <a href="./Proyecto1.3.html">¿Qué puedes aprender?</a>
+        <a href="./Proyecto1.4.html">¿Qué me gusta del ETE?</a>
+        <a href="./Proyecto1.5.html">Retos y Superación</a>
+        <a href="./Proyecto1.6.html">Estrategias de Inscripción</a>
+        <a href="./Proyecto1.7.html">Evitar Deserción</a>
+    </nav>
+</div>
+
+ <div class="mensaje-indice">
+Arrastrar el mouse para abrir el índice →
+</div>
+
+<section class="hero-final">
+    
+    <br><br>
+    <h1 class="hero-titulo">Misión: No Desertar</h1>
+    <h2 class="hero-subtitulo">Tu guía de supervivencia para llegar a la meta</h2>
+</section>
+
+<div class="contenedor-central">
+    
+    <div class="grid-simetrico">
+        <div class="tarjeta-cristal">
+            <span class="icono-tarjeta">🧠</span>
+            <h3 class="titulo-card">Mentalidad de Acero</h3>
+            <p>Habrá días difíciles donde el código no funcione. La clave no es ser el más inteligente, sino el más terco. Descansa, pero no renuncies.</p>
+        </div>
+
+        <div class="tarjeta-cristal">
+            <span class="icono-tarjeta">🤝</span>
+            <h3 class="titulo-card">Red de Apoyo</h3>
+            <p>Nadie se gradúa solo. Haz amigos, crea un grupo de WhatsApp exclusivo para dudas y apóyate en los profesores. El ETE es un trabajo en equipo.</p>
+        </div>
+
+        <div class="tarjeta-cristal">
+            <span class="icono-tarjeta">📅</span>
+            <h3 class="titulo-card">Gestión de Energía</h3>
+            <p>No esperes a la fecha límite. Avanza pequeños pasos cada día. El estrés es la causa #1 de deserción; evítalo organizándote.</p>
+        </div>
+
+        <div class="tarjeta-cristal">
+            <span class="icono-tarjeta">🎓</span>
+            <h3 class="titulo-card">La Recompensa</h3>
+            <p>Visualiza tu Título Técnico. Esa hoja de papel te abrirá puertas laborales antes de que termines la universidad. ¡Vale la pena el esfuerzo!</p>
+        </div>
+    </div>
+
+    <div class="mensaje-confort">
+        <h2>Un mensaje para ti, futuro técnico</h2>
+        <p>
+            Sé que mirar todo esto puede parecer abrumador. Tal vez pienses que no tendrás tiempo o que es demasiada responsabilidad para un estudiante de prepa. <br><br>
+            <b>Es verdad, no será fácil.</b> Habrá retos que pondrán a prueba tu paciencia. Pero quiero que sepas algo importante: 
+            Ya tienes la información, tienes las herramientas y, sobre todo, tienes la capacidad. No necesitas ser un genio desde el primer día, solo necesitas dar el primer paso y no detenerte. <br><br>
+            Confía en tu proceso. Lo vas a lograr.
+        </p>
+        <div class="firma">- Tu amiguito del ETE</div>
+        
+        <div style="margin-top: 30px;">
+            <img src="../Imagenes/Paz.JPG" class="cat-float" style="width: 180px;">
+        </div>
+    </div>
+
+</div>
+<div class="creditos-container">
+    <div class="creditos">
+        <p><strong>Bibliografía<br><br><br>Imágenes:<br><br>
+
+Gato: </strong>https://www.redbubble.com/es/i/cuaderno/Gamin-and-39-Gato-de-PapaKnox/33024958.WX3NH
+<br><strong>Convivencia: </strong>         https://katapudin.medium.com/valuasi-hidup-bf52afcbd2ff
+<br><strong>Chamba: </strong>         https://mx.pinterest.com/pin/747245763211749221/
+<br><strong>Globo:</strong>https://tenor.com/es/view/allen-amazing-world-of-gumball-mad-computer-meme-gif-3073874747929240811
+<br><strong>Meme3:</strong>https://www.facebook.com/SadRandomRPT/photos/a449a9fc/1433711148115443/
+<br><strong>Sabe Mucho:</strong>https://www.instagram.com/p/CzBreg_rGbd/
+<br><strong>Stonks:</strong>https://www.fayerwayer.com/internet/2025/09/26/el-ultimo-nuevo-uso-de-chatgpt-asesorarte-para-comprar-acciones/
+<br><strong>Memecss:</strong>https://mx.pinterest.com/pin/683421312235732409/
+<br><strong>Paz: </strong>https://www.instagram.com/p/DMqa7CsSANc/?img_index=4
+
+Gifs:<br><br>
+
+<br><strong>Abejas:</strong> https://moewalls.com/games/minecraft-sakura-oasis-live-wallpaper/#google_vignette
+<br><strong>Paisaje:</strong> https://mx.pinterest.com/pin/636555728630006765/
+<br><strong>Jim:</strong>https://tenor.com/es/view/working-late-working-hard-work-jim-carrey-typing-gif-17551952377594562206
+<br><strong>Ballena1:</strong>https://mx.pinterest.com/pin/3166662231725731/
+<br><strong>Beso:</strong> https://mx.pinterest.com/pin/512777107886345439/
+<br><strong>Ratón:</strong>https://mx.pinterest.com/pin/44684221297540723/
+<br><strong>Fondo Tech:</strong> https://makeagif.com/gif/video-para-fondo-de-pantalla-P203UH
+</p>
+    </div>
+</div>
+<footer>
+    Prepa ENP • Estudio Técnico Especializado de Computación • 2026<b> Página Creada por Escobar Cancino Mariano Emilio ETE-CM 91-B</b>
+</footer>
+
+<script>
+    window.addEventListener("click", function () {
+        const audio = document.getElementById("audioInicio");
+        audio.play();
+    }, { once: true });
+</script>
+
+</body>
+</html>
