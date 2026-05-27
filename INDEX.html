@@ -1,0 +1,145 @@
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Índice General</title>
+    <link rel="stylesheet" type="text/css" href="../MiSitioWeb-ECME-final/Estilos/Estilo2-ECME.css">
+    <style>
+        /* Estilos clonados de tu página favorita para coherencia total */
+        .contenedor-dinamico {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px;
+            background-color: white;
+        }
+
+        .tarjeta-indice {
+            background: #f2f6fb;
+            border-radius: 30px;
+            padding: 25px;
+            transition: all 0.4s ease;
+            box-shadow: 10px 10px 0px #5CA0ED; /* Sombra sólida azul */
+            border: 2px solid #5CA0ED;
+            color: black;
+            text-align: left;
+            text-decoration: none; /* Quitar subrayado de link */
+            display: block;
+        }
+
+        .tarjeta-indice:hover {
+            transform: translateY(-10px) rotate(-2deg); /* Rotación inversa para variedad */
+            box-shadow: 15px 15px 0px #F7CE39; /* Sombra cambia a amarillo */
+            border-color: #F7CE39;
+        }
+
+        .tarjeta-indice h3 {
+            font-family: 'Didot', serif;
+            color: #5CA0ED;
+            font-size: 26px;
+            margin-top: 0;
+        }
+
+        .numero-seccion {
+            background-color: #F7CE39;
+            color: black;
+            padding: 2px 12px;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 10px;
+            border: 2px solid black;
+        }
+
+        .destaque-azul {
+            background-color: #5CA0ED;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        /* Ajuste para que el texto interno no se vea como link azul */
+        .tarjeta-indice p {
+            color: #333;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body style="background-color: white;">
+
+<audio id="audioInicio">
+    <source src="../MiSitioWeb-ECME-final/Audios/Intro.mp3" type="audio/mpeg">
+</audio>
+
+<div class="supermarqueee">
+    <marquee direction="left" scrollamount="12">
+        <span style="font-size: 30px; font-weight: bold; color: white;">
+             Explora todas las etapas de esta Invitación a cursar el ETE de Computación 
+        </span>
+    </marquee>
+</div>
+
+<section class="hero-et" style="justify-content: center; text-align: center; flex-direction: column; min-height: 40vh; background-color: #5CA0ED;">
+    <h1 style="margin: 0; color: black;">Índice Principal</h1>
+    <h2 style="color: white; opacity: 1;">Haz click en cada tarjeta para dirijirse a esa página</h2>
+</section>
+
+
+
+<section class="contenido">
+    <div class="contenedor-dinamico">
+        
+        <a href="../MiSitioWeb-ECME-final/Paginas/Proyecto.html" class="tarjeta-indice">
+            <h3><span class="numero-seccion">1</span>Invitación</h3>
+            <p>El punto de partida. <span class="destaque-azul">Invitación</span> a la comunidad de Computación y los primeros pasos en la ENP.</p>
+        </a>
+
+        <a href="../MiSitioWeb-ECME-final/Paginas/Proyecto1.2.html" class="tarjeta-indice">
+            <h3><span class="numero-seccion">2</span>¿Por qué me invitas?</h3>
+            <p>No es solo un curso, es una <span class="destaque-azul">oportunidad única</span> que se desaprovecha a menudo.</p>
+        </a>
+
+        <a href="../MiSitioWeb-ECME-final/Paginas/Proyecto1.3.html" class="tarjeta-indice">
+            <h3><span class="numero-seccion">3</span>¿Qué puedes aprender?</h3>
+            <p>De Word a la creación web. Descubre cómo dejar de ser un espectador para convertirte en un <span class="destaque-azul">creador digital</span>.</p>
+        </a>
+
+        <a href="../MiSitioWeb-ECME-final/Paginas/Proyecto1.4.html" class="tarjeta-indice">
+            <h3><span class="numero-seccion">4</span>¿Qué me gusta del ETE?</h3>
+            <p>Ambiente, tips y la realidad de las máquinas. Aquí es donde la <span class="destaque-azul">experiencia</span> cobra sentido.</p>
+        </a>
+
+        <a href="../MiSitioWeb-ECME-final/Paginas/Proyecto1.5.html" class="tarjeta-indice">
+            <h3><span class="numero-seccion">5</span>Retos y Superación</h3>
+            <p> Hablamos de la <span class="destaque-azul">superación</span> de los retos que supone cursar un ETE</p>
+        </a>
+
+        <a href="../MiSitioWeb-ECME-final/Paginas/Proyecto1.6.html" class="tarjeta-indice">
+            <h3><span class="numero-seccion">6</span>Estrategias de Inscripción</h3>
+            <p>Como<span class="destaque-azul">convencer</span>a tuas amigs de cursar un ETE, razones para cursarla</p>
+        </a>
+
+        <a href="../MiSitioWeb-ECME-final/Paginas/Proyecto1.7.html" class="tarjeta-indice">
+            <h3><span class="numero-seccion">7</span>Evitar Deserción</h3>
+            <p>El mensaje de aliento para que <span class="destaque-azul">logres graduarte</span> con éxito.</p>
+        </a>
+
+    </div>
+</section>
+
+<footer style="background-color: #f2f6fb; color: black; border-top: 2px solid #5CA0ED;">
+       Prepa ENP • Estudio Técnico Especializado de Computación • 2026<br>
+       <b>Índice Creado por Escobar Cancino Mariano Emilio</b>
+</footer>
+
+<script>
+    window.addEventListener("click", function () {
+        const audio = document.getElementById("audioInicio");
+        audio.play();
+    }, { once: true });
+</script>
+
+</body>
+</html
+https://www.myinstants.com/es/instant/20th-century-fox-fanfare-26633/
