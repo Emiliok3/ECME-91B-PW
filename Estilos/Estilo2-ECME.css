@@ -1,0 +1,584 @@
+body.Color1 {
+background-color: white;
+}
+
+.Color3 {
+        background-image:url("../Imagenes/Tech.gif");
+        }
+
+.ImgFondo2 { 
+    background-image: url("../Imagenes/Gato1.GIF");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px; /* Dale altura para que se vea */
+}
+body.Color2 {
+	background-color:#5CA0ED;
+}
+
+Caption {
+	font-family:Garamond;
+	font-size:25px;
+	color: Black;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+marquee {
+    
+    padding: 17px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 70px;
+	font-family: PlayfairDisplay
+}
+
+h2 {
+    margin-top: 22px;
+	color: black;
+	font-family: Didot;
+	font-size: 30px;
+}
+.invitacion1 {
+	margin:40px
+ 
+}
+
+.invitacion {
+    background-color: rgba(0,0,0,0.5);
+    margin: 50px auto;
+    width: 70%;
+    padding: 30px;
+    border-radius: 20px;
+    font-size: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.imagen-cuadro {
+    margin: 5px auto;
+    width: 480px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.imagen-cuadro:hover {
+    transform: scale(1.08);
+}
+
+.contenedor-marquee {
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+
+.supermarquee{
+    position: absolute;
+    top: 0px;          /* más abajo */
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.supermarqueee{
+    position: absolute;
+    top: 0px;          /* más abajo */
+    left: 0;
+    width: 100%;
+	z-index: 1;}
+.basemarquee {
+    position: absolute;
+    top: 0;          
+    left: 0;
+    width: 100%;
+    font-weight: bold;
+    z-index: 2;    
+	/* encima */
+}
+	
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+footer {
+    margin-top: 10px;
+    padding: 35px;
+    background-color: rgba(0,0,0,0.4);
+    font-size: 20px;
+}
+
+
+.hero {
+    height: 60vh;                /* mitad superior  */
+    background-color: #5CA0ED;  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+    box-sizing: border-box;
+	
+}
+.hero h1 {
+    font-family: PlayfairDisplay;
+    font-size: clamp(52px, 5vw, 75px);
+    max-width: 900px;
+    line-height: 1.2;
+    margin: 0;
+	color:fff
+}
+
+.hero-et {
+  background:#5CA0ED;
+  color: white;
+  padding: 7px 7px 10px;
+  margin-top: 0;
+padding-top: 100px;
+  display: flex;
+  align-items: center;
+}
+hero-et {
+    margin-top: 0px; 
+    padding-top: 100px; /* Le damos espacio arriba para que la marquesina no tape el título */
+}
+
+.hero-content {
+  max-width: 910px;
+}
+
+.hero-et h1 {
+  font-size: 67px;
+  margin-bottom: 20px;
+ 
+}
+
+.hero-et h2 {  /*Subtitulo*/
+  font-size: 43px;
+  font-weight: 300;
+  line-height: 1.6;
+  opacity: 0.9;
+  font-weight: bold;
+
+}
+.contenido {
+    background-color: white;
+    color: black;
+    padding: 0px 0px;
+	position: relative; 
+}
+
+.  h2 {
+    font-family: Didot;
+    font-size: 50px;
+}
+.imagen-cuadro2 {
+    position: fixed;
+    top: 980px;
+    left: 2200px;
+    width: 500px;
+}
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 3000;
+}
+
+
+.zona-hover {
+    width: 75px;
+    height: 100%;
+}
+
+/* Contenido del menú */
+.menu-contenido {
+    position: absolute;
+    top: 0;
+    right: -220px;              /* oculto */
+    width: 220px;
+    height: 100%;
+    background-color:#F7CE39;
+    padding: 25px;
+    box-sizing: border-box;
+    transition: right 0.4s ease;
+	border-radius: 25px;
+}
+
+/* Título */
+.menu-contenido h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 34px;
+    color: solid white;
+	border:20px;
+	font-family:PlayfairDisplay;
+}
+
+/* Links */
+.menu-contenido a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 17px 0;
+    font-size: 25px;
+    transition: transform 0.3s, color 0.3s;
+	font-weight:bold
+}
+
+.menu-contenido a:hover {
+    color: #000000;
+    transform: translateX(-5px);
+}
+
+/* Al pasar el mouse → se despliega */
+.menu-lateral:hover .menu-contenido {
+    right: 0;
+}
+
+
+.hero-image img {
+  width: 260px;        /* ajusta tamaño */
+  max-width: 100%;
+  margin-top: 55px;   /* la sube un poquito */
+  left: 1100;
+  margin-left: 150px;
+  margin-bottom: 2px
+}
+
+.contenido {
+  width: 100%;
+  padding: 40px 60px;
+}
+
+/* --- ESTILO DE CONTENIDO SIMÉTRICO --- */
+
+.contenido {
+    background-color: white; /* Fondo de la sección en blanco */
+    padding: 50px 0;
+    width: 100%;
+}
+
+.contenedor-fila {
+    display: flex;
+    align-items: center;    /* Centra verticalmente imagen y texto */
+    justify-content: center; /* Centra el conjunto en la pantalla */
+    gap: 50px;              /* Espacio entre imagen y texto */
+    margin: 40px auto;
+    max-width: 1100px;      /* Ancho máximo de la fila */
+    padding: 20px;
+}
+
+/* Invierte el orden para que la imagen salga a la derecha */
+.fila-invertida {
+    flex-direction: row-reverse;
+}
+
+.img-lado {
+    width: 400px;           /* Tamaño fijo de imagen */
+    height: auto;
+    border-radius: 15px;
+    border: 4px solid #5CA0ED;
+    box-shadow: 10px 10px 0px #F7CE39; /* Sombra sólida amarilla */
+    flex-shrink: 0;         /* Evita que la imagen se aplaste */
+}
+
+.bloque {
+    flex: 1;                /* El texto ocupa el resto del espacio */
+    background: #f2f6fb;    /* Color de fondo del cuadro de texto */
+    padding: 30px;
+    border-radius: 20px;
+    color: black;           /* Texto negro para lectura */
+    text-align: left;       /* Texto alineado a la izquierda dentro del cuadro */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+}
+
+.bloque p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin: 0;
+}
+}
+
+/* Contenedor que alinea imagen y texto */
+.contenedor-fila {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 40px; /* Espacio entre imagen y texto */
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+/* Para invertir el orden (Imagen a la derecha) */
+.fila-invertida {
+    flex-direction: row-reverse;
+}
+
+/* Estilo para todas las imágenes de los lados */
+.img-lado {
+    max-width: 400px; /* El tamaño que tenías */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px #F7CE39; /* Sombra estilo retro */
+    border: 3px solid #5CA0ED;
+}
+
+/* Ajuste del bloque de texto para que no se pegue */
+.bloque {
+    flex: 1; /* Toma el espacio restante */
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* CONTENEDOR GENERAL */
+.panel-aprendizaje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 60px 0;
+  position: relative;
+}
+
+/* TEXTO CENTRAL (40%) */
+.texto-central {
+  width: 40vw;
+  background: #f2f6fb;
+  padding: 35px;
+  border-radius: 20px;
+  font-size: 22px;
+  line-height: 1.8;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* CONTENEDOR DE IMÁGENES */
+.imagenes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* IMÁGENES CONTROLADAS */
+.imagenes img {
+  width: 260px;
+  border-radius: 18px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* EFECTO HOVER */
+.imagenes img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/*PAG4*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* HERO */	
+.hero-nuevo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  background: #0a3cff;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-texto {
+  max-width: 45%;
+  animation: aparecer 1s ease;
+}
+
+.hero-texto h1 {
+  font-size: 3rem;
+}
+
+.hero-texto p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.hero-imagen img {
+  width: 320px;
+  border-radius: 20px;
+  transform: rotate(-3deg);
+  animation: flotar 3s infinite ease-in-out;
+}
+
+/* BLOQUES */
+.bloque {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 80px;
+}
+
+.bloque img {
+  width: 260px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.bloque img:hover {
+  transform: scale(1.05);
+}
+
+.bloque-der {
+  background: #ffffff;
+}
+
+.bloque-izq {
+  background: #eef2ff;
+}
+
+.texto {
+  max-width: 400px;
+}
+
+/* FRASE */
+.frase {
+  padding: 80px;
+  text-align: center;
+  font-size: 1.5rem;
+  background: #111;
+  color: white;
+}
+
+/* GALERÍA */
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px;
+}
+
+.galeria img {
+  width: 180px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  transition: 0.4s;
+}
+
+.galeria img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+/* ANIMACIONES */
+@keyframes flotar {
+  0% { transform: translateY(0) rotate(-3deg); }
+  50% { transform: translateY(-10px) rotate(-3deg); }
+  100% { transform: translateY(0) rotate(-3deg); }
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+ /*GIFS*/
+ /* Estilo para que el GIF se alinee con el texto */
+.gif-animado {
+    height: 100px; /* Ajusta el tamaño para que combine con el texto */
+    width:auto;
+	vertical-align: middle;
+    margin: 0 15px;
+	margin-top:	1px
+}
+.gif-animadoo {
+    height: 70px; /* Ajusta el tamaño para que combine con el texto */
+    width:auto;
+	vertical-align: middle;
+    margin: 0 15px;
+	margin-top:	1px
+}
+
+/* El contenedor de las tarjetas (Mosaico) */
+.mosaico-creativo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    background-color: white;
+}
+
+/* Estilo de las tarjetas individuales */
+.tarjeta-info {
+    background: #fdfdfd;
+    border: 3px solid #5CA0ED;
+    border-radius: 20px;
+    padding: 20px;
+    color: black;
+    box-shadow: 8px 8px 0px #F7CE39; /* Sombra sólida amarilla */
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-info:hover {
+    transform: translateY(-10px) rotate(1deg);
+    box-shadow: 8px 8px 0px #5CA0ED;
+}
+.mensaje-indice {
+  position: fixed;
+  top: 87px;
+  right: 35px;
+  z-index: 1000;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  padding: 8px 12px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+
+  pointer-events: none; 
+}
+
+.menu-lateral:hover ~ .mensaje-indice {  /*ME SUBESTMARON, DE MI SE BURLARON*/
+    opacity: 0;
+    visibility: hidden;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;  /* Para que el video quede detrás del contenido */
+  position:fixed;
+   object-fit: cover;
+}
